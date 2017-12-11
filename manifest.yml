@@ -1,0 +1,14 @@
+---
+applications:
+- name: demo-adder
+  path: target/MSTemplate-0.0.1-SNAPSHOT.jar
+  memory: 512M
+  instances: 1
+  buildpack: java-buildpack
+#  services:
+#          - ehsan-postgres 
+# 
+env:
+   SPRING_PROFILES_ACTIVE : cloud,clouddev
+  
+    
